@@ -1,0 +1,39 @@
+.footer {
+    background-color: #ff32aa71;  
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+  }
+  
+  .footer-icon img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-icon img:hover {
+    transform: scale(1.2); 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer{
+      margin-top: 100px;
+    }
+    
+    .footer-icons {
+      flex-direction:row ; 
+      gap: 15px;
+    }
+  
+    .footer-icon img {
+      width: 40px; 
+      height: 40px;
+    }
+  }
+  

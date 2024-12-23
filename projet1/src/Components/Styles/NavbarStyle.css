@@ -1,0 +1,205 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff32aa71; 
+    flex-wrap: wrap; 
+    position: sticky; /* Navbar fixe */
+    top: 0; 
+    width: 100%; /* Occupe toute la largeur */
+    z-index: 1000; /* Au-dessus des autres éléments */
+}
+
+.navbar .logo {
+    margin-top: 20px;
+    flex: 1; 
+}
+
+.nav-links button {
+    background-color: #ff66cc; /* Rose-fuchsia primary color */
+    color: #fff; /* White text */
+    border: 2px solid #ff3399; /* Slightly darker border for contrast */
+    padding: 10px 25px; /* Comfortable padding */
+    font-size: 16px; /* Readable font size */
+    font-weight: bold; /* Bold text for emphasis */
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .nav-links button:hover {
+    background-color: #ff3399; /* Darker rose-fuchsia on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .nav-links button:active {
+    transform: scale(0.95); /* Button presses down when clicked */
+    background-color: #e60073; /* Even darker rose-fuchsia for click feedback */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  }
+.navbar .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; 
+    padding-right: 0; 
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ff75cafe;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}
+
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Popup box */
+  .popup {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup h2 {
+    color: #ff66cc;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-button {
+    background-color: #ff66cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-button:hover {
+    background-color: #ff3399;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 104px;
+    justify-content: flex-end;
+  }
+  
+  .user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }

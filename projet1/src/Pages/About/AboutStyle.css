@@ -1,0 +1,174 @@
+.About {
+    background: url('../../../public/assets/background1080-1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.About .logo-loconada {
+    font-size: 2.5em;
+    margin: 40px 0;
+}
+
+.About .Paragraphe {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.6;
+}
+
+.About .lien {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 400px;
+}
+
+.About .lien a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%; 
+}
+
+.About .lien a:hover {
+    background-color: black;
+    color: white;
+}
+
+.Poster img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1em;
+    }
+
+    .About .logo-loconada img {
+        width: 50%;
+    }
+
+    .About .Paragraphe {
+        font-size: 0.9em;
+    }
+
+    .About .lien a {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .About .logo-loconada img {
+        width: 60%;
+    }
+
+    .About .Paragraphe {
+        font-size: 0.8em;
+    }
+
+    .About .lien a {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+}
+
+
+.InfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(213, 208, 208, 0.7);
+    border-radius: 10px;
+    max-width: 80%;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.InfoBox-left {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.InfoBox-left .logo-box img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.InfoBox-left p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.InfoBox-right {
+    flex: 1;
+    text-align: center;
+}
+
+.InfoBox-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .InfoBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .InfoBox-left,
+    .InfoBox-right {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .InfoBox-left p {
+        font-size: 0.9em;
+    }
+
+    .InfoBox-left .logo-box img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .InfoBox-left p {
+        font-size: 0.8em;
+    }
+
+    .InfoBox-left .logo-box img {
+        width: 80%;
+    }
+}
+
+
+

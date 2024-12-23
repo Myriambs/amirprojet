@@ -1,0 +1,114 @@
+.Admin {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: calc(100vh - 60px); 
+    position: fixed; 
+    top: 121px; 
+    left: 0;
+    overflow-y: auto; 
+	margin-top: "32px";
+}
+.content {
+    flex: 1; /* Prend le reste de l'espace */
+    margin-left: 250px; /* Laisse de la place pour la Sidebar */
+	margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Cartes sur plusieurs lignes */
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centrer les cartes horizontalement */
+    align-items: flex-start; /* Aligner les cartes au début */
+}
+
+
+.event-card {
+	width: 100%;
+	max-width: 400px;
+
+	background-color: rgba(213, 208, 208, 0.7);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	overflow: hidden;
+	font-size: 16px;
+}
+.event-card img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.event-card .info {
+	padding: 20px;
+}
+.event-card .info h3 {
+	margin: 0 0 10px;
+	font-size: 24px;
+	color: white;
+}
+.event-card .info p {
+	margin: 5px 0;
+	color: white;
+}
+.reserve-btn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 0 0 10px 10px;
+	font-size: 18px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.reserve-btn:hover {
+	background-color: #2980b9;
+}
+@media (max-width: 768px) {
+	.body {
+		flex-direction: column;
+	}
+	.sidebar {
+		width: 100%;
+		height: auto;
+		padding: 10px 0;
+	}
+	.content {
+		padding: 10px;
+	}
+	.event-card {
+		margin: 10px;
+	}
+}
+@media (max-width: 480px) {
+	.sidebar img {
+		width: 80px;
+		height: 80px;
+	}
+	.sidebar h2 {
+		font-size: 18px;
+	}
+	.logout-btn {
+		padding: 8px 16px;
+		font-size: 14px;
+	}
+	.event-card .info h3 {
+		font-size: 20px;
+	}
+	.event-card .info p {
+		font-size: 14px;
+	}
+	.reserve-btn {
+		font-size: 16px;
+		padding: 12px;
+	}
+}
